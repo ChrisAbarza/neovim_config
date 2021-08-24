@@ -30,6 +30,15 @@ Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'https://github.com/tpope/vim-fugitive'
 
+Plug 'xolox/vim-session'
+Plug 'xolox/vim-misc'
+
+Plug 'vim-airline/vim-airline'
+
+Plug 'elzr/vim-json'
+
+Plug 'tpope/vim-commentary'
+
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " this is for auto complete, prettier and tslinting
 
 let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']  " list of CoC extensions needed
@@ -47,6 +56,7 @@ call plug#end()
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
 let NERDTreeQuitOnOpen=1
+let g:session_autosave='no'
 
 " se define el tecla lider [espacio]
 let mapleader=" "
